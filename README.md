@@ -116,30 +116,30 @@
 
 - Express 使用方式為：
   
-  * 1. 建立項目資料夾
+   + 建立項目資料夾
+   
+   + 建立 package.json 文件
+   
+   + 安裝 express
+   
+   + 創建入口文件 app.js
+   
+   + 打開 app.js 引入 express
+   
+   + 定義一個變量 `var app = express()` 這句代碼就等同於核心模塊中的 `http.createServer()` 方法
+   
+   + 設定路徑 `app.get('/',function(req,res){res.send('hello express!')})`
   
-  * 2. 建立 package.json 文件
+        + app.get() 方法參數1 為 url 地址，參數2 為回調函數
 
-  * 3. 安裝 express
-
-  * 4. 創建入口文件 app.js
-  
-  * 5. 打開 app.js 引入 express
-
-  * 6. 定義一個變量 `var app = express()` 這句代碼就等同於核心模塊中的 `http.createServer()` 方法
-
-  * 7. `app.get('/',function(req,res){res.send('hello express!')})`
-  
-    + app.get() 方法參數1 為 url 地址，參數2 為回調函數
-
-    + express 中不再使用 res.write() 、 res.end() 而是直接使用 res.send()
+        + express 中不再使用 res.write() 、 res.end() 而是直接使用 res.send()
     
-    + express 已幫我們處理好中文亂碼的問題 響應中文時就不需要再設置請求頭了
+        + express 已幫我們處理好中文亂碼的問題 響應中文時就不需要再設置請求頭了
 
-    + express 也處理了沒有設置的 url 地址會直接返回 Cannot GET /XXX
+        + express 也處理了沒有設置的 url 地址會直接返回 Cannot GET /XXX
 
-    + 在 express 中要處理靜態資源的方式也很簡單 一樣創建一個 public 目錄 把需要的資源存放進去
+        + 在 express 中要處理靜態資源的方式也很簡單 一樣創建一個 public 目錄 把需要的資源存放進去
 
-    + 然後通過 `app.use('/public/', express.static('./public/'))` 公開靜態資源
+        + 然後通過 `app.use('/public/', express.static('./public/'))` 公開靜態資源
 
-    + 在 express 中 可以通過 `req.query` 獲取 get 請求的參數 且直接就是對象
+        + 在 express 中 可以通過 `req.query` 獲取 get 請求的參數 且直接就是對象
