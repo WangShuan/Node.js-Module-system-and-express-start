@@ -134,6 +134,6 @@
 
     * 在 express 中要處理靜態資源的方式也很簡單 一樣創建一個 public 目錄 把需要的資源存放進去
 
-    * 然後使用 app.use() 方法 參數1為路徑 'public' 參數2為`express.static('./public/')
+    * 然後通過 `app.use('/public/', express.static('./public/'))` 公開靜態資源
 
     * 在 express 中 可以通過 req.query 獲取 get 請求的參數 且直接就是對象
