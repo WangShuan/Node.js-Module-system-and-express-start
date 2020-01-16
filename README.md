@@ -72,23 +72,23 @@
 
  - 常用命令為：
 
-   + 1. `npm init`: 創建 package.json 文件，若有加上`--yes` 就會跳過嚮導 快速生成此文件。
+   + `npm init`: 創建 package.json 文件，若有加上`--yes` 就會跳過嚮導 快速生成此文件。
   
      * `npm i -y`
   
-   + 2. `npm install`: 安裝所有 package.json 文件中 `dependencies` 屬性的項目。
+   + `npm install`: 安裝所有 package.json 文件中 `dependencies` 屬性的項目。
    
      * `npm i`
   
-   + 3. `npm install 包名`: 安裝包，若有加上 `--save` 就會同時更新 package.json 文件。
+   + `npm install 包名`: 安裝包，若有加上 `--save` 就會同時更新 package.json 文件。
    
      * `npm i XXX -s`
    
-   + 4. `npm uninstall 包名`: 刪除包，若有加上 `--save` 就會同時更新 package.json 文件。
+   + `npm uninstall 包名`: 刪除包，若有加上 `--save` 就會同時更新 package.json 文件。
     
      * `npm un XXX -s`
   
-   + 5. `npm 命令 --help`: 查詢這個命令的使用幫助。
+   + `npm 命令 --help`: 查詢這個命令的使用幫助。
 
 #### package.json
 
