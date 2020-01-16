@@ -122,7 +122,7 @@
     
     * express() 方法就是核心模塊中的 http.createServer() 方法
 
-  + 7. app.get('/',function(req,res){res.send('hello express!')})
+  + 7. `app.get('/',function(req,res){res.send('hello express!')})`
   
     * app.get() 方法參數1 為 url 地址，參數2 為回調函數
 
@@ -136,4 +136,4 @@
 
     * 然後通過 `app.use('/public/', express.static('./public/'))` 公開靜態資源
 
-    * 在 express 中 可以通過 req.query 獲取 get 請求的參數 且直接就是對象
+    * 在 express 中 可以通過 `req.query` 獲取 get 請求的參數 且直接就是對象
